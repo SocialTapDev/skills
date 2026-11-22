@@ -32,7 +32,7 @@ SocialTap is the social media scraper API for developers and AI agents. Send a p
 
 ## SDK and CLI
 
-In TypeScript, `npm install socialtap` gives a typed method for every endpoint, with retries and pagination ([TypeScript SDK](https://socialtap.dev/docs/sdks/typescript/index.md)); `import { socialtapTools } from "socialtap/ai"` hands the MCP server's tools to a model in your own code; `npx socialtap` calls any endpoint from a shell, and `npx socialtap init` sets up your coding agents (the Agent Skill and the MCP server).
+In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, with retries and pagination ([Go SDK](https://socialtap.dev/docs/sdks/go/index.md)); `npx socialtap` calls any endpoint from a shell, and `npx socialtap init` sets up your coding agents (the Agent Skill and the MCP server).
 
 ## Endpoints
 

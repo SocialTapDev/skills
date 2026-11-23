@@ -64,7 +64,7 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | Bluesky · Profile | `GET /v1/bluesky/profile` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/bluesky/profile/index.md) |
 | Bluesky · Post Search | `GET /v1/bluesky/search_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/bluesky/search-posts/index.md) |
 | Facebook Ad Library · Ad | `GET /v1/facebook/ad` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/facebook/ad/index.md) |
-| Facebook Ad Library · Ad Transcript | `GET /v1/facebook/ad_transcript` | 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/facebook/ad-transcript/index.md) |
+| Facebook Ad Library · Ad Transcript | `GET /v1/facebook/ad_transcript` | 2 credits + 2 per started minute of media (speech-to-text, automatic up to 3 minutes, longer with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/facebook/ad-transcript/index.md) |
 | Facebook Ad Library · Advertiser Ads | `GET /v1/facebook/ads` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/facebook/ads/index.md) |
 | Facebook Ad Library · Advertiser | `GET /v1/facebook/advertiser` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/facebook/advertiser/index.md) |
 | Facebook · Comments | `GET /v1/facebook/comments` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/facebook/comments/index.md) |
@@ -89,7 +89,7 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | Facebook Marketplace · Location Search | `GET /v1/facebook/search_places` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/facebook/search-places/index.md) |
 | Facebook · Post Search | `GET /v1/facebook/search_posts` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/facebook/search-posts/index.md) |
 | Facebook · Page and People Search | `GET /v1/facebook/search_profiles` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/facebook/search-profiles/index.md) |
-| Facebook · Video Transcript | `GET /v1/facebook/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/facebook/transcript/index.md) |
+| Facebook · Video Transcript | `GET /v1/facebook/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, automatic up to 3 minutes, longer with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/facebook/transcript/index.md) |
 | GitHub · Activity | `GET /v1/github/activity` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/github/activity/index.md) |
 | GitHub · Contributions | `GET /v1/github/contributions` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/github/contributions/index.md) |
 | GitHub · Followers | `GET /v1/github/followers` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/github/followers/index.md) |
@@ -153,11 +153,11 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | Instagram · Audio Reels | `GET /v1/instagram/sound_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/instagram/sound-posts/index.md) |
 | Instagram · Story | `GET /v1/instagram/story` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/instagram/story/index.md) |
 | Instagram · Topic | `GET /v1/instagram/topic` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/instagram/topic/index.md) |
-| Instagram · Reels Transcript | `GET /v1/instagram/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/instagram/transcript/index.md) |
+| Instagram · Reels Transcript | `GET /v1/instagram/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, automatic up to 3 minutes, longer with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/instagram/transcript/index.md) |
 | Instagram · Trending Reels | `GET /v1/instagram/trending_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/instagram/trending-posts/index.md) |
 | Instagram · Username Availability | `GET /v1/instagram/username` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/instagram/username/index.md) |
 | Kick · Clip | `GET /v1/kick/post` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/kick/post/index.md) |
-| Kick · Clip Transcript | `GET /v1/kick/transcript` | 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/kick/transcript/index.md) |
+| Kick · Clip Transcript | `GET /v1/kick/transcript` | 2 credits + 2 per started minute of media (speech-to-text, automatic up to 3 minutes, longer with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/kick/transcript/index.md) |
 | Komi · Page | `GET /v1/komi/page` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/komi/page/index.md) |
 | Kwai · Post | `GET /v1/kwai/post` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/kwai/post/index.md) |
 | Kwai · User Posts | `GET /v1/kwai/posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/kwai/posts/index.md) |
@@ -183,7 +183,7 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | LinkedIn · Job Search | `GET /v1/linkedin/search_jobs` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/linkedin/search-jobs/index.md) |
 | LinkedIn · Post Search | `GET /v1/linkedin/search_posts` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/linkedin/search-posts/index.md) |
 | LinkedIn · Company and People Search | `GET /v1/linkedin/search_profiles` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/linkedin/search-profiles/index.md) |
-| LinkedIn · Video Transcript | `GET /v1/linkedin/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/linkedin/transcript/index.md) |
+| LinkedIn · Video Transcript | `GET /v1/linkedin/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, automatic up to 3 minutes, longer with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/linkedin/transcript/index.md) |
 | Linkme · Profile | `GET /v1/linkme/profile` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/linkme/profile/index.md) |
 | Linktree · Profile | `GET /v1/linktree/profile` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/linktree/profile/index.md) |
 | Pillar · Page | `GET /v1/pillar/page` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/pillar/page/index.md) |
@@ -209,14 +209,14 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | Reddit · Subreddit Search | `GET /v1/reddit/search_subreddits` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/reddit/search-subreddits/index.md) |
 | Reddit · Subreddit | `GET /v1/reddit/subreddit` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/reddit/subreddit/index.md) |
 | Reddit · Subreddit Posts | `GET /v1/reddit/subreddit_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/reddit/subreddit-posts/index.md) |
-| Reddit · Video Transcript | `GET /v1/reddit/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/reddit/transcript/index.md) |
+| Reddit · Video Transcript | `GET /v1/reddit/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, automatic up to 3 minutes, longer with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/reddit/transcript/index.md) |
 | Rumble · Comments | `GET /v1/rumble/comments` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/rumble/comments/index.md) |
 | Rumble · Engagement | `GET /v1/rumble/engagement` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/rumble/engagement/index.md) |
 | Rumble · Video | `GET /v1/rumble/post` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/rumble/post/index.md) |
 | Rumble · Channel Videos | `GET /v1/rumble/posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/rumble/posts/index.md) |
 | Rumble · Channel | `GET /v1/rumble/profile` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/rumble/profile/index.md) |
 | Rumble · Search | `GET /v1/rumble/search_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/rumble/search-posts/index.md) |
-| Rumble · Transcript | `GET /v1/rumble/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/rumble/transcript/index.md) |
+| Rumble · Transcript | `GET /v1/rumble/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, automatic up to 3 minutes, longer with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/rumble/transcript/index.md) |
 | Snapchat · Comments | `GET /v1/snapchat/comments` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/snapchat/comments/index.md) |
 | Snapchat · Profile | `GET /v1/snapchat/profile` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/snapchat/profile/index.md) |
 | Snapchat · Spotlight | `GET /v1/snapchat/spotlight` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/snapchat/spotlight/index.md) |
@@ -276,7 +276,7 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | TikTok · Sound Posts | `GET /v1/tiktok/sound_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/tiktok/sound-posts/index.md) |
 | TikTok Ad Library · Top Ads | `GET /v1/tiktok/top_ads` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/tiktok/top-ads/index.md) |
 | TikTok · Top Videos | `GET /v1/tiktok/top_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/tiktok/top-posts/index.md) |
-| TikTok · Transcript | `GET /v1/tiktok/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/tiktok/transcript/index.md) |
+| TikTok · Transcript | `GET /v1/tiktok/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, automatic up to 3 minutes, longer with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/tiktok/transcript/index.md) |
 | TikTok · Trending Hashtags | `GET /v1/tiktok/trending_hashtags` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/tiktok/trending-hashtags/index.md) |
 | TikTok · Trending Videos | `GET /v1/tiktok/trending_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/tiktok/trending-posts/index.md) |
 | TikTok Shop · Product | `GET /v1/tiktokshop/product` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/tiktokshop/product/index.md) |
@@ -288,7 +288,7 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | Truth Social · Profile | `GET /v1/truthsocial/profile` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/truthsocial/profile/index.md) |
 | Twitch · Profile | `GET /v1/twitch/profile` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/twitch/profile/index.md) |
 | Twitch · Schedule | `GET /v1/twitch/schedule` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/twitch/schedule/index.md) |
-| Twitch · Clip Transcript | `GET /v1/twitch/transcript` | 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/twitch/transcript/index.md) |
+| Twitch · Clip Transcript | `GET /v1/twitch/transcript` | 2 credits + 2 per started minute of media (speech-to-text, automatic up to 3 minutes, longer with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/twitch/transcript/index.md) |
 | Twitch · Video and Clip | `GET /v1/twitch/video` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/twitch/video/index.md) |
 | Twitch · Videos | `GET /v1/twitch/videos` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/twitch/videos/index.md) |
 | X · Comments | `GET /v1/x/comments` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/x/comments/index.md) |
@@ -307,7 +307,7 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | X · Post Search | `GET /v1/x/search_posts` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/x/search-posts/index.md) |
 | X · User Search | `GET /v1/x/search_profiles` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/x/search-profiles/index.md) |
 | X · Spaces | `GET /v1/x/space` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/x/space/index.md) |
-| X · Video Transcript | `GET /v1/x/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/x/transcript/index.md) |
+| X · Video Transcript | `GET /v1/x/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, automatic up to 3 minutes, longer with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/x/transcript/index.md) |
 | YouTube · Comments | `GET /v1/youtube/comments` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/youtube/comments/index.md) |
 | YouTube · Engagement | `GET /v1/youtube/engagement` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/youtube/engagement/index.md) |
 | YouTube · Hashtag Videos | `GET /v1/youtube/hashtag_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/youtube/hashtag-posts/index.md) |
@@ -317,7 +317,7 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | YouTube · Search | `GET /v1/youtube/search_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/youtube/search-posts/index.md) |
 | YouTube · Channel Search | `GET /v1/youtube/search_profiles` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/youtube/search-profiles/index.md) |
 | YouTube · Search Suggestions | `GET /v1/youtube/search_suggestions` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/youtube/search-suggestions/index.md) |
-| YouTube · Transcript | `GET /v1/youtube/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/youtube/transcript/index.md) |
+| YouTube · Transcript | `GET /v1/youtube/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, automatic up to 3 minutes, longer with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/youtube/transcript/index.md) |
 
 ## Example
 

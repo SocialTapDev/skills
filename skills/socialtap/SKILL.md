@@ -8,7 +8,7 @@ metadata:
 
 # SocialTap
 
-SocialTap is the social media scraper API for developers and AI agents. Send a public link, a handle or a search and get live data back in one schema. Failed requests are free. Available now: activity on GitHub; ads on Facebook, Google, LinkedIn and TikTok; albums on Apple Music and Spotify; comments on Bluesky, Facebook, GitHub, Hacker News, Instagram, LinkedIn, Reddit, Rumble, Snapchat, Threads, TikTok, X and YouTube; communities on Facebook, LinkedIn, Reddit and X; contribution calendars on GitHub; downloads on TikTok; effects on TikTok; embeds on Instagram; engagement stats on Facebook, Instagram, LinkedIn, Reddit, Rumble, TikTok, X and YouTube; events on Facebook; hashtags on Instagram and TikTok; issues on GitHub; jobs on Hacker News and LinkedIn; livestreams on TikTok, Twitch and X; offers on Amazon; places on Facebook and Instagram; playlists on Amazon, Apple Music, Instagram, Pinterest, Spotify, TikTok and X; podcasts on Spotify; posts on Amazon, Apple Music, Bluesky, Facebook, Hacker News, Instagram, Kick, Kwai, LinkedIn, Pinterest, Reddit, Rumble, Snapchat, SoundCloud, Spotify, Telegram, Threads, TikTok, Truth Social, Twitch, X and YouTube; products on Amazon, Facebook and TikTok Shop; profiles on Amazon, Apple Music, Bluesky, Facebook, GitHub, Google, Hacker News, Instagram, Komi, Kwai, LinkedIn, Linkme, Linktree, Lnk.Bio, Pillar, Pinterest, Reddit, Rumble, Snapchat, SoundCloud, Spotify, Telegram, Threads, TikTok, Truth Social, Twitch, X and YouTube; readmes on GitHub; relationships on X; releases on GitHub; repositories on GitHub; reviews on Amazon and TikTok Shop; sounds on Instagram and TikTok; suggestions on Google, Instagram and TikTok; topics on Instagram and Pinterest; transcripts on Facebook, Instagram, Kick, LinkedIn, Reddit, Rumble, TikTok, Twitch, X and YouTube; trends on Instagram and Pinterest; usernames on Instagram; web pages on Pinterest; web results on Facebook, Instagram, LinkedIn, Telegram, TikTok and X.
+SocialTap is the social media scraper API for developers and AI agents. Send a public link, a handle or a search and get live data back in one schema. Failed requests are free. Available now: activity on GitHub; ads on Facebook, Google, LinkedIn and TikTok; albums on Apple Music and Spotify; comments on Bluesky, Facebook, GitHub, Hacker News, Instagram, LinkedIn, Reddit, Rumble, Snapchat, Threads, TikTok, X and YouTube; communities on Facebook, LinkedIn, Reddit and X; contribution calendars on GitHub; downloads on TikTok; effects on TikTok; embeds on Instagram; engagement stats on Facebook, Instagram, LinkedIn, Reddit, Rumble, TikTok, X and YouTube; events on Facebook; hashtags on Instagram and TikTok; issues on GitHub; jobs on Hacker News and LinkedIn; livestreams on TikTok, Twitch and X; offers on Amazon; places on Facebook and Instagram; playlists on Amazon, Apple Music, Instagram, Pinterest, Spotify, TikTok and X; podcasts on Spotify; posts on Amazon, Apple Music, Bluesky, Facebook, Hacker News, Instagram, Kick, Kwai, LinkedIn, Pinterest, Reddit, Rumble, Snapchat, SoundCloud, Spotify, Telegram, Threads, TikTok, Truth Social, Twitch, X and YouTube; products on Amazon, Facebook and TikTok Shop; profiles on Amazon, Apple Music, Bluesky, Facebook, GitHub, Google, Hacker News, Instagram, Komi, Kwai, LinkedIn, Linkme, Linktree, Lnk.Bio, Pillar, Pinterest, Reddit, Rumble, Snapchat, SoundCloud, Spotify, Telegram, Threads, TikTok, Truth Social, Twitch, X and YouTube; readmes on GitHub; relationships on X; releases on GitHub; repositories on GitHub; reviews on Amazon and TikTok Shop; sounds on Instagram and TikTok; suggestions on Google, Instagram, TikTok and YouTube; topics on Instagram and Pinterest; transcripts on Facebook, Instagram, Kick, LinkedIn, Reddit, Rumble, TikTok, Twitch, X and YouTube; trends on Instagram and Pinterest; usernames on Instagram; web pages on Pinterest; web results on Facebook, Instagram, LinkedIn, Telegram, TikTok and X.
 
 **When to use SocialTap.** Use it when a task needs public data from the platforms listed above, read live when you ask. Send what you have: a link as people share it, a handle, an ID or words to search. It reads public, logged-out data only (never private accounts, messages or anything behind a login) and never posts for an account. A platform or kind of data not listed has no endpoint: don't guess a path.
 
@@ -84,11 +84,11 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | Facebook Ad Library · Search | `GET /v1/facebook/search_ads` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/facebook/search-ads/index.md) |
 | Facebook Ad Library · Advertiser Search | `GET /v1/facebook/search_advertisers` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/facebook/search-advertisers/index.md) |
 | Facebook Events · Event Search | `GET /v1/facebook/search_events` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/facebook/search-events/index.md) |
-| Facebook · Group Search | `GET /v1/facebook/search_groups` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/facebook/search-groups/index.md) |
+| Facebook · Group Search | `GET /v1/facebook/search_groups` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/facebook/search-groups/index.md) |
 | Facebook Marketplace · Search | `GET /v1/facebook/search_listings` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/facebook/search-listings/index.md) |
 | Facebook Marketplace · Location Search | `GET /v1/facebook/search_places` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/facebook/search-places/index.md) |
-| Facebook · Post Search | `GET /v1/facebook/search_posts` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/facebook/search-posts/index.md) |
-| Facebook · Page and People Search | `GET /v1/facebook/search_profiles` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/facebook/search-profiles/index.md) |
+| Facebook · Post Search | `GET /v1/facebook/search_posts` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/facebook/search-posts/index.md) |
+| Facebook · Page and People Search | `GET /v1/facebook/search_profiles` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/facebook/search-profiles/index.md) |
 | Facebook · Video Transcript | `GET /v1/facebook/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/facebook/transcript/index.md) |
 | GitHub · Activity | `GET /v1/github/activity` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/github/activity/index.md) |
 | GitHub · Contributions | `GET /v1/github/contributions` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/github/contributions/index.md) |
@@ -143,10 +143,10 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | Instagram · Profile | `GET /v1/instagram/profile` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/instagram/profile/index.md) |
 | Instagram · Reels | `GET /v1/instagram/reels` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/instagram/reels/index.md) |
 | Instagram · Hashtag Search | `GET /v1/instagram/search_hashtags` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/instagram/search-hashtags/index.md) |
-| Instagram · Location Search | `GET /v1/instagram/search_places` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/instagram/search-places/index.md) |
+| Instagram · Location Search | `GET /v1/instagram/search_places` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/instagram/search-places/index.md) |
 | Instagram · Search | `GET /v1/instagram/search_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/instagram/search-posts/index.md) |
-| Instagram · User Search | `GET /v1/instagram/search_profiles` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/instagram/search-profiles/index.md) |
-| Instagram · Audio Search | `GET /v1/instagram/search_sounds` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/instagram/search-sounds/index.md) |
+| Instagram · User Search | `GET /v1/instagram/search_profiles` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/instagram/search-profiles/index.md) |
+| Instagram · Audio Search | `GET /v1/instagram/search_sounds` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/instagram/search-sounds/index.md) |
 | Instagram · Search Suggestions | `GET /v1/instagram/search_suggestions` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/instagram/search-suggestions/index.md) |
 | Instagram · Similar Accounts | `GET /v1/instagram/similar_profiles` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/instagram/similar-profiles/index.md) |
 | Instagram · Audio | `GET /v1/instagram/sound` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/instagram/sound/index.md) |
@@ -181,8 +181,8 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | LinkedIn · Profile Groups | `GET /v1/linkedin/profile_groups` | 5 credits per page | [docs](https://socialtap.dev/docs/reference/linkedin/profile-groups/index.md) |
 | LinkedIn Ad Library · Search | `GET /v1/linkedin/search_ads` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/linkedin/search-ads/index.md) |
 | LinkedIn · Job Search | `GET /v1/linkedin/search_jobs` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/linkedin/search-jobs/index.md) |
-| LinkedIn · Post Search | `GET /v1/linkedin/search_posts` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/linkedin/search-posts/index.md) |
-| LinkedIn · Company and People Search | `GET /v1/linkedin/search_profiles` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/linkedin/search-profiles/index.md) |
+| LinkedIn · Post Search | `GET /v1/linkedin/search_posts` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/linkedin/search-posts/index.md) |
+| LinkedIn · Company and People Search | `GET /v1/linkedin/search_profiles` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/linkedin/search-profiles/index.md) |
 | LinkedIn · Video Transcript | `GET /v1/linkedin/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/linkedin/transcript/index.md) |
 | Linkme · Profile | `GET /v1/linkme/profile` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/linkme/profile/index.md) |
 | Linktree · Profile | `GET /v1/linktree/profile` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/linktree/profile/index.md) |
@@ -238,7 +238,7 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | Telegram · Channel | `GET /v1/telegram/channel` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/telegram/channel/index.md) |
 | Telegram · Channel Posts | `GET /v1/telegram/channel_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/telegram/channel-posts/index.md) |
 | Telegram · Post | `GET /v1/telegram/post` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/telegram/post/index.md) |
-| Telegram · Channel Search | `GET /v1/telegram/search_channels` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/telegram/search-channels/index.md) |
+| Telegram · Channel Search | `GET /v1/telegram/search_channels` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/telegram/search-channels/index.md) |
 | Threads · Comments | `GET /v1/threads/comments` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/threads/comments/index.md) |
 | Threads · Post | `GET /v1/threads/post` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/threads/post/index.md) |
 | Threads · Posts | `GET /v1/threads/posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/threads/posts/index.md) |
@@ -266,12 +266,12 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | TikTok · Profile | `GET /v1/tiktok/profile` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/tiktok/profile/index.md) |
 | TikTok · Comment Replies | `GET /v1/tiktok/replies` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/tiktok/replies/index.md) |
 | TikTok Ad Library · Search | `GET /v1/tiktok/search_ads` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/tiktok/search-ads/index.md) |
-| TikTok · Hashtag Search | `GET /v1/tiktok/search_hashtags` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/tiktok/search-hashtags/index.md) |
+| TikTok · Hashtag Search | `GET /v1/tiktok/search_hashtags` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/tiktok/search-hashtags/index.md) |
 | TikTok · Search | `GET /v1/tiktok/search_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/tiktok/search-posts/index.md) |
-| TikTok · User Search | `GET /v1/tiktok/search_profiles` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/tiktok/search-profiles/index.md) |
-| TikTok · Sound Search | `GET /v1/tiktok/search_sounds` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/tiktok/search-sounds/index.md) |
+| TikTok · User Search | `GET /v1/tiktok/search_profiles` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/tiktok/search-profiles/index.md) |
+| TikTok · Sound Search | `GET /v1/tiktok/search_sounds` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/tiktok/search-sounds/index.md) |
 | TikTok · Search Suggestions | `GET /v1/tiktok/search_suggestions` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/tiktok/search-suggestions/index.md) |
-| TikTok · Top Search | `GET /v1/tiktok/search_top` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/tiktok/search-top/index.md) |
+| TikTok · Top Search | `GET /v1/tiktok/search_top` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/tiktok/search-top/index.md) |
 | TikTok · Sound | `GET /v1/tiktok/sound` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/tiktok/sound/index.md) |
 | TikTok · Sound Posts | `GET /v1/tiktok/sound_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/tiktok/sound-posts/index.md) |
 | TikTok Ad Library · Top Ads | `GET /v1/tiktok/top_ads` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/tiktok/top-ads/index.md) |
@@ -302,17 +302,21 @@ In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, wi
 | X · User Posts | `GET /v1/x/posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/x/posts/index.md) |
 | X · Profile | `GET /v1/x/profile` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/x/profile/index.md) |
 | X · Mentions | `GET /v1/x/profile_mentions` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/x/profile-mentions/index.md) |
-| X · Community Search | `GET /v1/x/search_communities` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/x/search-communities/index.md) |
+| X · Community Search | `GET /v1/x/search_communities` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/x/search-communities/index.md) |
 | X · Hashtag Search | `GET /v1/x/search_hashtags` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/x/search-hashtags/index.md) |
-| X · Post Search | `GET /v1/x/search_posts` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/x/search-posts/index.md) |
-| X · User Search | `GET /v1/x/search_profiles` | 1 credit + 1 per result filled in per page | [docs](https://socialtap.dev/docs/reference/x/search-profiles/index.md) |
+| X · Post Search | `GET /v1/x/search_posts` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/x/search-posts/index.md) |
+| X · User Search | `GET /v1/x/search_profiles` | 1 credit + 1 per result filled in (with fill=true) per page | [docs](https://socialtap.dev/docs/reference/x/search-profiles/index.md) |
 | X · Spaces | `GET /v1/x/space` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/x/space/index.md) |
 | X · Video Transcript | `GET /v1/x/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/x/transcript/index.md) |
 | YouTube · Comments | `GET /v1/youtube/comments` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/youtube/comments/index.md) |
 | YouTube · Engagement | `GET /v1/youtube/engagement` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/youtube/engagement/index.md) |
+| YouTube · Hashtag Videos | `GET /v1/youtube/hashtag_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/youtube/hashtag-posts/index.md) |
 | YouTube · Video | `GET /v1/youtube/post` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/youtube/post/index.md) |
 | YouTube · Channel Videos | `GET /v1/youtube/posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/youtube/posts/index.md) |
 | YouTube · Channel | `GET /v1/youtube/profile` | 1 credit per request | [docs](https://socialtap.dev/docs/reference/youtube/profile/index.md) |
+| YouTube · Search | `GET /v1/youtube/search_posts` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/youtube/search-posts/index.md) |
+| YouTube · Channel Search | `GET /v1/youtube/search_profiles` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/youtube/search-profiles/index.md) |
+| YouTube · Search Suggestions | `GET /v1/youtube/search_suggestions` | 1 credit per page | [docs](https://socialtap.dev/docs/reference/youtube/search-suggestions/index.md) |
 | YouTube · Transcript | `GET /v1/youtube/transcript` | 1 credit (captions) or 2 credits + 2 per started minute of media (speech-to-text, with transcribe_audio=true) per request | [docs](https://socialtap.dev/docs/reference/youtube/transcript/index.md) |
 
 ## Example

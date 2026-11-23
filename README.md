@@ -2,7 +2,7 @@
 
 SocialTap is the social media scraper API for developers and AI agents. Send a public link, a handle or a search and get live data back in one schema. Failed requests are free.
 
-This skill teaches your coding agent when to use the SocialTap API and how to call it, with every endpoint and its inputs. It works in Claude Code, Cursor, Codex and any agent that loads skills (SKILL.md).
+This skill teaches your coding agent when to use the SocialTap API and how to call it, with every endpoint and its inputs. It works in Claude Code, Codex, Cursor, Grok Build and any agent that loads skills (SKILL.md).
 
 ## Install
 

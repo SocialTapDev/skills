@@ -10,8 +10,6 @@ This skill teaches your coding agent when to use the SocialTap API and how to ca
 npx skills add SocialTapDev/skills
 ```
 
-Or run `npx socialtap init`: it installs this skill and connects the SocialTap MCP server to your coding agents.
-
 ## Skills
 
 | Skill | What it does |

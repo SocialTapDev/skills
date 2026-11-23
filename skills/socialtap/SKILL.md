@@ -27,12 +27,8 @@ SocialTap is the social media scraper API for developers and AI agents. Send a p
 11. **Notifications.** Instead of polling, register a webhook endpoint with `POST /v1/webhook_endpoints`: deliveries are signed (Standard Webhooks); verify the signature on the raw body before trusting one.
 12. **Retry POSTs safely.** Send a new `idempotency-key` (a UUID) with every POST and reuse it when you retry: the work runs once, and a retry answers with the current state.
 13. **Balance.** `GET /v1/account` returns the balance, free.
-14. **MCP.** Connect the remote server at `https://socialtap.dev/mcp` (Streamable HTTP): it signs your user in with their browser, or takes the API key as `authorization: Bearer <key>` or in the `x-api-key` header. It lists `find_endpoint`, `get_post`, `list_posts`, `get_profile`, `list_comments`, `get_transcript`, `get_engagement`, `search`, `call_endpoint`, `search_docs`, `read_doc` and `get_account`: `find_endpoint` names the endpoint for a need or a link, and `call_endpoint` calls any endpoint; `?tools=all` on its URL lists every tool. Setup in [the agent guide](https://socialtap.dev/docs/agents/index.md).
+14. **MCP.** Connect the remote server at `https://socialtap.dev/mcp` (Streamable HTTP): it signs your user in with their browser, or takes the API key as `Authorization: Bearer <key>` or in the `x-api-key` header. It lists `find_endpoint`, `get_post`, `list_posts`, `get_profile`, `list_comments`, `get_transcript`, `get_engagement`, `search`, `call_endpoint`, `search_docs`, `read_doc`, `get_account` and `buy_credits`: `find_endpoint` names the endpoint for a need or a link, and `call_endpoint` calls any endpoint; `?tools=all` on its URL lists every tool. Setup in [the agent guide](https://socialtap.dev/docs/agents/index.md).
 15. **Verify.** Before building on an endpoint, run its example request (on its docs page) and check that `data` is not empty. Report the endpoint, `meta.credits_charged` and any `error.code` you saw.
-
-## SDK and CLI
-
-In Go, `go get socialtap.dev/sdk/go` gives a typed method for every endpoint, with retries and pagination ([Go SDK](https://socialtap.dev/docs/sdks/go/index.md)); `npx socialtap` calls any endpoint from a shell, and `npx socialtap init` sets up your coding agents (the Agent Skill and the MCP server).
 
 ## Endpoints
 

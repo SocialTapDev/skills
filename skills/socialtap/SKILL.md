@@ -12,6 +12,8 @@ SocialTap is the social media scraper API for developers and AI agents. Send a p
 
 **When to use SocialTap.** Use it when a task needs public data from the platforms listed above, read live when you ask. Send what you have: a link as people share it, a handle, an ID or words to search. It reads public, logged-out data only (never private accounts, messages or anything behind a login) and never posts for an account. A platform or kind of data not listed has no endpoint: don't guess a path.
 
+If `find_endpoint` or another SocialTap tool is in your tool list, use the tools to get data for your user: `find_endpoint` names the tool and its arguments for any need or link. Use the API below when you write code that calls SocialTap.
+
 ## How to use the API
 
 1. **Authenticate.** Send the API key in the `x-api-key` header of every request to `https://socialtap.dev`. Read it from an environment variable such as `SOCIALTAP_API_KEY` and call the API from server-side code only. Never hard-code a key, invent one or ask for one in chat.

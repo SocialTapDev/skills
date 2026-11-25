@@ -18,7 +18,7 @@ npx skills add SocialTapDev/skills
 
 ## More
 
-- Get an API key: https://socialtap.dev/signup/
+- Get an API key: https://socialtap.dev/signup/?ref=agents
 - Docs for agents: https://socialtap.dev/llms.txt
 - The same skill on the site: https://socialtap.dev/.well-known/agent-skills/socialtap/SKILL.md
 - MCP server: https://github.com/SocialTapDev/socialtap-mcp
